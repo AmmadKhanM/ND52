@@ -1473,11 +1473,11 @@ $anim-dur_x2: 1s;
     &.is--active-frame-4 {
 
         .frame--4 {
-            transition-delay: $anim-dur;
+            transition-delay: $anim-dur_x2;
 
             .box-wrapper {
                 transform: translateY(0px);
-                transition-delay: $anim-dur;
+                transition-delay: $anim-dur_x2;
             }
         }
     }
@@ -2367,16 +2367,36 @@ $anim-dur_x2: 1s;
         }
     }
     .frame--3 {
+        opacity: 1;
+        .c-img-frame-zoom{
+            position: absolute;
+            // right: 50px;
+            // top: 50%;
+            right: 12vw;
+            top: 40vh;
+            width: 700px;
+            height: 400px;
+            transform: translateY(64vh);
+            // transition: all 0.75s ease-in-out;
+            transition: right .75s ease-in-out .75s, top .75s ease-in-out .75s, width .75s ease-in-out .75s, height .75s ease-in-out .75s, transform .75s ease-in-out;
+            z-index: 1;
+        }
         > .container {
             > .col-setting {
-                transform: translateY(35vh);
+                // transform: translateY(35vh);
+                transform: translateY(64vh);
                 transition: all 0.75s ease-in-out;
-                opacity: 0;
+                // opacity: 0;
             }
             > .colm-6:not(.col-setting) {
-                transform: translateY(30vh);
+                // transform: translateY(30vh);
+                transform: translateY(64vh);
                 transition: all 0.75s ease-in-out;
-                opacity: 0;
+                // animation-delay: .75s;
+                // opacity: 0;
+                .c-img-box{
+                    transition: all 0.75s ease-in-out;
+                }
             }
             .col-1_row-b .c-btn-b {
                 transform: translateY(0);
@@ -2436,12 +2456,25 @@ $anim-dur_x2: 1s;
     }
     &.is--gone-frame-3 {
         .frame--3 {
+            .c-img-frame-zoom{
+                right: 0px;
+                top: 0%;
+                width: 100%;
+                height: 100vh;
+                transform: translateY(-102vh);
+                transition: right .70s ease-in-out, top .70s ease-in-out, width .70s ease-in-out, height .70s ease-in-out, transform .70s ease-in-out .70s;
+                opacity: 1;
+            }
             > .container {
                 > .colm-6:not(.col-setting) {
-                    transform: translateY(-30vh);
+                    // transform: translateY(-30vh);
+                    transform: translateY(-87vh);
+                    
                 }
                 > .col-setting {
-                    transform: translateY(-26vh);
+                    // transform: translateY(-26vh);
+                    transform: translateY(-87vh);
+                    // opacity: 1;
                 }
             }
         }
@@ -2482,6 +2515,10 @@ $anim-dur_x2: 1s;
                     transition-delay: $anim-dur;
                     opacity: 1;
                 }
+            }
+            .c-img-frame-zoom{
+                transform: translateY(0vh);
+                transition-delay: $anim-dur;
             }
         }
     }
