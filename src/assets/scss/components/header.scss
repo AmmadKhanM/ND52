@@ -1,0 +1,286 @@
+body {
+    &.menu-is-open {
+        overflow: hidden;
+    }
+}
+
+
+
+.c-header {
+    width: 100%;
+    background: var(--primary-color);
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: var(--secondary-color);
+    }
+
+
+
+    @media (max-width: 1200px) {
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-color);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24.5px;
+        padding-bottom: 24.5px;
+
+        @media (max-width: 1200px) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    }
+
+    a {
+        color: var(--secondary-color);
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+
+        @media (max-width: 1200px) {
+            font-weight: 700;
+        }
+    }
+
+    a.c-btn {
+        color: var(--white);
+        display: inline;
+    }
+
+    a:hover {
+        color: #813003;
+    }
+
+    a.c-btn:hover {
+        color: #fff;
+    }
+
+    .is-lang-link-mob,
+    .is-lang-link {
+
+        html[lang="en-US"] &,
+        html[lang="en"] &,
+        html[dir="ltr"] & {
+            font-family: $font-family_1_ar;
+        }
+
+        html[dir="rtl"] & {
+            font-family: $font-family_1;
+        }
+    }
+
+    .is-lang-link-mob {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 24px 0 auto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        @media (min-width: 1201px) {
+            display: none;
+        }
+    }
+
+    .nav {
+        background-color: var(--primary-color);
+
+        @media (max-width: 1200px) {
+            z-index: -1;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+
+            @media (max-width: 1200px) {
+                // --vh variable
+                height: calc(var(--vh, 1vh) * 100);
+            }
+
+            padding: 120px 24px 101px;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 115%;
+            letter-spacing: 0.22px;
+
+            background: var(--primary-color) url(../img/strip-union-day--orange.svg) repeat-x left bottom / auto 69.5px;
+            transform: translateY(-100%);
+            transition: transform 0.75s ease-in-out;
+
+            @media (max-height: 710px) {
+                padding-bottom: 69px;
+            }
+
+            // 635
+            @media (max-height: 635px) {
+                padding-top: 100px;
+            }
+
+            .c-btn {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .menu-is-open & {
+            @media (max-width: 1200px) {
+                transform: translateY(0);
+            }
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+
+            @media (max-width: 1200px) {
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+                overflow: auto;
+            }
+        }
+
+        li {
+            &:not(:last-child) {
+                padding-right: 48px;
+
+                @media (max-width: 1350px) {
+                    padding-right: 38px;
+                }
+
+                @media (max-width: 1300px) {
+                    padding-right: 28px;
+                }
+
+                @media (max-width: 1200px) {
+                    padding-right: 0;
+                    margin-bottom: 40px;
+                    width: 100%;
+
+                    @media (max-height: 710px) {
+                        margin-bottom: 5vh;
+                    }
+                }
+            }
+
+            &.is-lang-link {
+                @media (max-width: 1200px) {
+                    display: none;
+                }
+            }
+        }
+
+        display: flex;
+        align-items: center;
+    }
+
+    .has-sticky-header & {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+    }
+
+    .has-cta {
+        @media (max-width: 1200px) {
+            margin: auto 0 0 0;
+        }
+    }
+
+    .c-hamburger-btn {
+        margin: -16px -24px -16px 0;
+
+        @media (min-width: 1201px) {
+            display: none;
+        }
+    }
+
+    .logo {
+
+        img,
+        svg {
+            @media (max-width: 1200px) {
+                height: 32px;
+            }
+        }
+    }
+
+    .active {
+        color: #813003;
+    }
+}
+
+.c-hamburger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 23px 24px;
+    height: 100%;
+    cursor: pointer;
+    border-left: 1px solid var(--secondary-color);
+
+    .line {
+        background: var(--secondary-color);
+        height: 2px;
+        display: block;
+        width: 23px;
+        margin-bottom: 6px;
+        transition: all 0.3s ease-in-out;
+
+        &:nth-child(2) {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .menu-is-open & {
+        .line {
+            &:first-child {
+                transform: rotate(45deg);
+                transform-origin: top left;
+            }
+
+            &:nth-child(2) {
+                width: 0;
+                opacity: 0;
+            }
+
+            &:last-child {
+                transform: rotate(-45deg) translate(-1px, -1px);
+                transform-origin: top left;
+            }
+        }
+    }
+}

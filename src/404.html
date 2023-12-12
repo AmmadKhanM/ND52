@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ND52</title>
+    <link rel="shortcut icon" href="/assets/img/icons/fav_icon.svg" type="image/x-icon">
+    <link id="style-css" rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <div class="js-header-sticky-placeholder"></div>
+
+    <header class="c-header js-header-sticky">
+        <div class="container">
+            <a href="{{english_link}}" class="logo"><img src="{{logo_src}}" alt="{{logo_alt}}"></a>
+            <a href="{{arabic_link}}" class="is-lang-link-mob">{{arabic_text}}</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="{{what_on_link}}">{{what_on_text}}</a></li>
+                    <li><a href="{{participate_link}}">{{participate_text}}</a></li>
+                    <li><a href="{{about_us_link}}">{{about_us_text}}</a></li>
+                    <!-- <li><a href="{{tickets_link}}">{{tickets_text}}</a></li> -->
+                    <!-- <li><a href="{{shop_link}}">{{shop_text}}</a></li> -->
+                    <li><a href="{{contact_us_link}}" class="js-open-contact">{{contact_us_text}}</a></li>
+                    <li class="has-cta" id="watchlive">
+                        <a href="{{watchlive}}" class="c-btn" target="_blank">Watch Live</a>
+                    </li>
+                    <li class="has-cta" id="calendar-cta">
+                        <a href="{{calendar_link}}" class="c-btn" download title="{{calendar_text}}"
+                            aria-label="{{calendar_text}}">{{calendar_text}}</a>
+                    </li>
+                    <li class="is-lang-link"><a href="{{arabic_link}}">{{arabic_text}}</a></li>
+                </ul>
+            </nav>
+            <div class="c-hamburger-btn js-menu-toggle">
+                <i class="line"></i>
+                <i class="line"></i>
+                <i class="line"></i>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="c-section-1">
+        <div class="container c-section-1 error-sec">
+            <div class="left-column">
+                <h1 class="c-title-3">{{title404}}</h1>
+                <h4>{{subTitle404}}</h4>
+                <p>{{dec404}}</p>
+                <div class="action">
+                    <a href="{{english_link}}" class="c-btn">{{backButton404}}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="c-marquee is--orange">
+        <div id="marquee" class="marquee"></div>
+    </section>
+
+    <footer class="c-footer">
+        <div class="container">
+            <div class="f-top">
+                <div class="sec-a">
+                    <div class="sec-col-1">
+                        <a href="#" class="logo">
+                            <img src="{{logo_white_src}}" alt="{{footerLogoAlt}}">
+                        </a>
+                    </div>
+                    <div class="sec-col-2">
+                        <nav class="is-nav">
+                            <h6 class="nav-title">{{connectTitle}}</h6>
+                            <ul class="nav-list">
+                                <li><a href="#" class="js-open-contact">{{contactUsText}}</a></li>
+                            </ul>
+                            <ul class="social-list">
+                                <li><a href="{{fblink}}" target="_blank"><img src="/assets/img/facebook.svg"
+                                            alt="{{facebookAlt}}"></a></li>
+                                <li><a href="{{instalink}}" target="_blank"><img src="/assets/img/instagram.svg"
+                                            alt="{{instagramAlt}}"></a></li>
+                                <li><a href="{{twlink}}" target="_blank"><img src="/assets/img/twitter.svg"
+                                            alt="{{twitterAlt}}"></a></li>
+                                <li><a href="{{youtubelink}}" target="_blank"><img src="/assets/img/youtube.svg"
+                                            alt="{{youtubeAlt}}"></a></li>
+                                <li><a href="{{tiktoklink}}" target="_blank"><img
+                                            src="/assets/img/icons/TikTok Logo.svg" alt="tiktok url"></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="sec-b">
+                    <nav class="is-nav">
+                        <h6 class="nav-title">{{navigateTitle}}</h6>
+                        <ul class="nav-list">
+                            <li><a href="#whatson">{{whatsOnText}}</a></li>
+                            <li><a href="{{about_us_link}}">{{aboutUsText}}</a></li>
+                            <li><a href="./#faqs">{{faqsText}}</a></li>
+                            <li><a href="{{pactivities}}">{{pastCelebrationsText}}</a></li>
+                            <li><a href="#">{{shopText}}</a></li>
+                            <li><a href="#howtoparticipate">{{howToParticipateText}}</a></li>
+                            <!-- <li><a href="#">{{ticketsText}}</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="f-bot">
+                <p class="copy">{{copyrightReserve}}</p>
+                <a href="{{termslink}}" class="t-n-c_link">{{termsAndConditions}}</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="c-popup-video">
+        <div class="popup-overlay js-close-video-popup"></div>
+        <div class="popup-content-box">
+            <div class="popup-close-btn js-close-video-popup">
+                <i></i>
+                <i></i>
+            </div>
+            <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="_9gcklXGStA"></div>
+        </div>
+    </div>
+
+    <section class="c-contact-form js-contact-form">
+        <div class="popup-overlay hidden js-close-contact"></div>
+        <div id="popup" class="popup hidden">
+            <div class="popup-content">
+                <div class="close-btn-area">
+                    <button class="close js-close-contact"><img src="/assets/img/icons/close.svg"></button>
+                </div>
+
+                <h2 class="c-f-brown">{{header}}</h2>
+                <p>{{contact_description}}</p>
+                <form>
+
+                    <div class="form-fields">
+                        <div class="row">
+                            <div class="col">
+                                <label>{{inquiry_label}}</label>
+                                <select>
+                                    <option>{{inquiry_option1}}</option>
+                                    <option>{{inquiry_option2}}</option>
+                                    <option>{{inquiry_option3}}</option>
+                                    <option>{{inquiry_option4}}</option>
+                                    <option>{{inquiry_option5}}</option>
+                                </select>
+                            </div>
+                            <div class="col" style="margin-bottom: 0px;">
+                                <input type="hidden" id="countryCode" value="ae">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>{{first_name_label}}</label>
+                                <input id="first_name" type="text" placeholder="{{first_name_placeholder}}"
+                                    pattern="^(?=.*[A-Za-z])[A-Za-z\s]*$" maxlength="30" required>
+                            </div>
+                            <div class="col">
+                                <label>{{last_name_label}}</label>
+                                <input id="last_name" type="text" placeholder="{{last_name_placeholder}}"
+                                    pattern="^(?=.*[A-Za-z])[A-Za-z\s]*$" maxlength="30" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>{{phone_label}}</label>
+                                <div class="custom-select">
+
+                                    <input id="phone" type="tel" placeholder="{{phone_placeholder}}" maxlength="20"
+                                        pattern="^\+?[0-9\s]{7,}$" required>
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>{{email_label}}</label>
+                                <input type="email" placeholder="{{email_placeholder}}" pattern=".+@.+\..+"
+                                    maxlength="254" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-0">
+                                <label>{{message_label}}</label>
+                                <textarea id="txtarea" placeholder="{{message_placeholder}}" maxlength="400"
+                                    required></textarea>
+                                <p class="c-char-count">{{msg_count}} <span id="charCount">400</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">{{send_button_text}}</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>

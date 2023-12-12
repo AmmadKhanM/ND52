@@ -1,0 +1,211 @@
+.c-footer {
+    color: var(--white);
+    padding: 120px 0;
+    background: var(--dark-color);
+
+    @media (max-width: 1150px) {
+        padding: 80px 0;
+    }
+
+    @media (max-width: 600px) {
+        padding: 60px 0;
+    }
+
+    .logo {
+
+        img,
+        svg {
+            height: 57px;
+            width: auto;
+
+            @media (max-width: 600px) {
+                height: 55px;
+            }
+        }
+    }
+
+    .f-bot {
+        display: flex;
+        width: 100%;
+        border-top: 1px solid var(--grey);
+        justify-content: space-between;
+        margin-top: 64px;
+        padding-top: 32px;
+
+        @media (max-width: 600px) {
+            margin-top: 5px;
+            padding-top: 32px;
+            flex-direction: column-reverse;
+
+            .t-n-c_link {
+                margin-bottom: 24px;
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    a {
+        color: var(--white);
+    }
+
+    .nav-title {
+        font-weight: 400;
+        opacity: 0.4;
+        margin: 0 0 24px 0;
+
+        @media (max-width: 600px) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .is-nav {
+        width: 100%;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        li {
+            width: 25%;
+            margin-bottom: 32px;
+            padding-right: 35px;
+
+            @media (max-width: 1500px) {
+                width: 33.3333%;
+            }
+
+            @media (max-width: 1300px) {
+                width: 50%;
+            }
+
+            @media (max-width: 600px) {
+                margin-bottom: 32px;
+                padding-right: 0;
+            }
+        }
+    }
+
+    .f-top {
+        display: flex;
+        width: 100%;
+
+        @media (max-width: 980px) {
+            flex-direction: column;
+        }
+
+        .sec-a {
+            display: flex;
+            width: 100%;
+            width: 38%;
+            border-right: 1px solid var(--grey);
+            padding-right: 150px;
+
+            @media (max-width: 1700px) {
+                padding-right: 100px;
+            }
+
+            @media (max-width: 1600px) {
+                padding-right: 75px;
+            }
+
+            @media (max-width: 1500px) {
+                width: 45%;
+            }
+
+            @media (max-width: 1200px) {
+                padding-right: 50px;
+            }
+
+            @media (max-width: 1150px) {
+                flex-direction: column;
+                width: 320px;
+            }
+
+            @media (max-width: 980px) {
+                padding-right: 0;
+                border-right: none;
+                border-bottom: 1px solid var(--grey);
+                padding-bottom: 32px;
+                margin-bottom: 32px;
+                width: 100%;
+            }
+        }
+
+        .sec-b {
+            display: flex;
+            width: 100%;
+            width: 62%;
+            padding-left: 150px;
+
+            @media (max-width: 1700px) {
+                padding-left: 100px;
+            }
+
+            @media (max-width: 1600px) {
+                padding-left: 75px;
+            }
+
+            @media (max-width: 1500px) {
+                width: 55%;
+            }
+
+            @media (max-width: 1200px) {
+                padding-left: 50px;
+            }
+
+            @media (max-width: 1150px) {
+                width: calc(100% - 320px);
+                padding-left: 100px;
+            }
+
+            @media (max-width: 980px) {
+                padding-left: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    .sec-col-1 {
+        @media (max-width: 1150px) {
+            margin-bottom: 60px;
+        }
+    }
+
+    .sec-col-2 {
+        margin: 0 0 0 auto;
+
+        @media (max-width: 1150px) {
+            margin: 0;
+        }
+
+        .nav-list {
+            li {
+                width: 100%;
+            }
+        }
+    }
+
+    .social-list {
+        display: flex;
+        width: 100%;
+
+        li {
+            margin-right: 32px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .copy {
+        color: var(--light-color);
+        opacity: 0.4;
+        font-weight: 400;
+    }
+}

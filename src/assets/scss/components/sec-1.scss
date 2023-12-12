@@ -1,0 +1,121 @@
+.c-section-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0px;
+    background: $background-color_4 ;
+    color: var(--white);
+
+    &.container {
+        padding: 0 24px;
+    }
+
+    // 767
+    @media (max-width: 767px) {
+        padding-top: 40px;
+    }
+
+    .left-column {
+        flex: 1;
+        max-width: 820px;
+        padding: 80px 40px 80px 0;
+        position: relative;
+        background-color: $background-color_7;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+
+        // 767
+        @media (max-width: 767px) {
+            padding: 0;
+        }
+
+        .action {
+            margin-top: 40px;
+        }
+    }
+
+    .right-column {
+        flex: 1;
+        padding: 0px 20px;
+        max-width: 894px;
+        position: relative;
+    }
+
+    h1 {
+
+
+        // 767
+        @media (max-width: 767px) {
+            margin-bottom: 24px;
+        }
+    }
+
+    p {
+        margin: 0px 0px 40px 0px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        letter-spacing: 0.2px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-image: url('overlay.png');
+        background-size: cover;
+        opacity: 0.5;
+    }
+
+    .centered-image {
+        width: initial;
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+
+        // 767
+        @media (max-width: 767px) {
+            left: -20px;
+        }
+    }
+
+    .man-flag {
+        width: 100%;
+        height: auto;
+        padding-top: 108px;
+        padding-bottom: 100px;
+    }
+
+    // 767
+    @media (max-width: 767px) {
+        flex-direction: column;
+
+        .left-column {
+            display: block;
+        }
+
+        .right-column {
+            flex: none;
+            align-items: center;
+            text-align: left;
+            padding: 0;
+            margin-top: 40px;
+        }
+
+        .man-flag {
+            width: 100%;
+            height: auto;
+            padding: 38px 0;
+        }
+    }
+}

@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <title>ND52</title>
+    <link rel="shortcut icon" href="/assets/img/icons/fav_icon.svg" type="image/x-icon">
+
+    <!-- Inline Critical CSS -->
+    <link id="style-css-critical" rel="stylesheet" href="/assets/css/critical.css">
+
+    <link rel="preload" href="/assets/css/style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </noscript>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var links = document.querySelectorAll('link[rel="preload"][as="style"]');
+            for (var i = 0; i < links.length; i++) {
+                links[i].setAttribute('rel', 'stylesheet');
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="js-header-sticky-placeholder"></div>
+
+    <header class="c-header js-header-sticky">
+        <div class="container">
+            <a href="{{english_link}}" class="logo"><img src="{{logo_src}}" alt="{{logo_alt}}"></a>
+            <a href="{{arabic_link}}" class="is-lang-link-mob">{{arabic_text}}</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="{{what_on_link}}" data-scroll-target="c-section-2">{{what_on_text}}</a></li>
+                    <li><a href="{{participate_link}}" data-scroll-target="c-tabs-content">{{participate_text}}</a></li>
+                    <li><a href="{{about_us_link}}" data-scroll-target="about-us-link">{{about_us_text}}</a></li>
+                    <!-- <li><a href="{{tickets_link}}">{{tickets_text}}</a></li> -->
+                    <!-- <li><a href="{{shop_link}}">{{shop_text}}</a></li> -->
+                    <li><a href="{{contact_us_link}}" class="js-open-contact">{{contact_us_text}}</a></li>
+                    <li class="has-cta" id="watchlive" style="display: none;">
+                        <a href="{{watchlive}}" class="c-btn" target="_blank">Watch Live</a>
+                    </li>
+                    <li class="has-cta" id="calendar-cta">
+                        <a href="{{calendar_link}}" class="c-btn" download title="{{calendar_text}}"
+                            aria-label="{{calendar_text}}">{{calendar_text}}</a>
+                    </li>
+                    <li class="is-lang-link"><a href="{{arabic_link}}">{{arabic_text}}</a></li>
+                </ul>
+            </nav>
+            <div class="c-hamburger-btn js-menu-toggle">
+                <i class="line"></i>
+                <i class="line"></i>
+                <i class="line"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="c-hero-section">
+        <div class="container">
+            <div class="left-column">
+                <div class="txt-area">
+
+                    <h1 class="c-title">
+                        <strong>{{join_text}}</strong> {{union_day}}
+                    </h1>
+
+                </div>
+                <div class="img-area">
+                    <div class="strip52-wrapper">
+                        <img class="strip52" src="/assets/img/icons/UD_52ELEMENT_ANIMATIONS_B-04.gif"
+                            alt="{{strip_alt}}">
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="r-col__wrapper">
+                    <div class="hero-image">
+                        <div class="preview ">
+                            <video autoplay loop muted playsinline>
+                                <source src="/assets/misc/UD52.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <a href="#" class="c-btn-d js-open-video-popup">
+                            <span class="txt">{{play_video_button}}</span>
+                            <div class="c-download is--play"><img src="/assets/img/play-icon.svg" /></div>
+                        </a>
+                    </div>
+
+                    <div class="two-columns">
+
+                        <div class="col-1">
+
+                            <div class="c-overlay">
+
+                                <h4 class="c-title">{{celebration_story_title}}</h4>
+
+                                <a href="experience.html" class="c-btn-d js-soft-link-click">
+                                    <span class="txt">{{discover_button}}</span>
+                                    <div class="c-download is--arrow"><img src="/assets/img/upright-arrow.svg" /></div>
+                                    <div class="content-img"><img src="/assets/img/celeb-story-kids.jpg"
+                                            alt="{{celeb_story_alt}}">
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-2">
+                            <div class="brand-guidlines">
+                                <i class="c-border-hover border border--top"></i>
+                                <i class="c-border-hover border border--right"></i>
+                                <i class="c-border-hover border border--bot"></i>
+                                <i class="c-border-hover border border--left"></i>
+                                <h4 class="c-title">{{brand_guidelines_title}}</h4>
+
+                                <img src="/assets/img/brand-vector.svg" class="b-vector">
+                                <a href="{{download_brandkit}}" class="c-btn-d" target="_blank">
+                                    <span class="txt">{{download_button}}</span>
+                                    <div class="c-download"><img src="/assets/img/download (1).svg" /></div>
+                                </a>
+                            </div>
+                            <div class="celebration-kit">
+                                <i class="c-border-hover border border--top"></i>
+                                <i class="c-border-hover border border--right"></i>
+                                <i class="c-border-hover border border--bot"></i>
+                                <i class="c-border-hover border border--left"></i>
+                                <h4 class="c-title">{{celebration_kit_title}}</h4>
+
+                                <a href="{{celebrationkit_link}}" class="c-btn-d" target="_blank">
+                                    <span class="txt">{{download_button}}</span>
+                                    <div class="c-download"><img src="/assets/img/download (1).svg" /></div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="c-section-1" id="about-us">
+        <div class="container c-section-1">
+            <div class="left-column">
+
+                <h1>{{header_text}}</h1>
+                <p>{{paragraph_text}}</p>
+                <div class="action">
+                    <a href="{{about_us_link}}" class="c-btn">{{btn_text}}</a>
+                </div>
+            </div>
+            <div class="right-column">
+
+                <img src="/assets/img/man-with-flag.png" alt="{{img1_alt}}" class="man-flag" style="width:100%;">
+                <img class="centered-image tree" src="/assets/img/icons/union-strip-trees-01-parallex-01.svg"
+                    alt="{{centered_img_alt}}">
+                <img class="centered-image" src="/assets/img/icons/union-strip-trees-01-stripe.svg"
+                    alt="{{centered_img_alt}}">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="c-section-2" id="whatson">
+        <div class="container">
+            <h1><span>{{subheader}}</span>{{header_2}}</h1>
+            <h4>{{header_1}}</h4>
+            <i class="underline"></i>
+
+            <div class="slider-wrap">
+                <div class="slick-slider">
+                    {% for slide in slide_items %}
+                    <div class="slide-item">
+                        <img src="/assets/img/sliderdemo.png" alt="{{slide.img_alt}}" />
+                        <div class="slide-content">
+                            <i class="border border--top"></i>
+                            <i class="border border--right"></i>
+                            <i class="border border--bot"></i>
+                            <i class="border border--left"></i>
+                            <div class="slide-text">
+                                <div class="top-content">
+                                    <div class="above-fold">
+                                        <ul class="c-meta-tags-wrap">
+                                            <li class="meta-tag">{{slide.meta_1}}</li>
+                                            <li class="meta-tag">{{slide.meta_2}}</li>
+                                        </ul>
+                                        <h3>{{slide.title}}</h3>
+                                    </div>
+                                    <p>{{slide.description}}</p>
+                                    <ul class="actions">
+                                        <li>
+                                            <a href="#" class="c-btn">{{slide.actions.map}}</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="c-btn">{{slide.actions.watch_live}}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bot-content">
+                                    <p><strong>{{slide.time}}</strong> {{slide.time_value}}</p>
+                                    <p><strong>{{slide.location}}</strong> {{slide.location_value}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="bottom-controls">
+                <div class="slider-nav">
+                    <div class="controls-text">{{controls_text}}</div>
+                    <div class="slide-counter"><small>{{counter}}</small></div>
+                    <div class="slide-arrows">
+
+                        <div class="slide-next ">
+                            <svg width="48" height="49" viewBox="0 0 48 49" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.5859 24.3575L23.293 35.0646L24.7073 33.6504L16.4144 25.3575L36.0002 25.3575V23.3575L16.4143 23.3575L24.7073 15.0646L23.293 13.6504L12.5859 24.3575Z"
+                                    fill="#B44406" />
+                                <path
+                                    d="M0.5 10.3574C0.5 5.11072 4.75329 0.857422 10 0.857422H38C43.2467 0.857422 47.5 5.11072 47.5 10.3574V38.3574C47.5 43.6041 43.2467 47.8574 38 47.8574H10C4.75329 47.8574 0.5 43.6041 0.5 38.3574V10.3574Z"
+                                    stroke="#B44406" />
+                            </svg>
+
+                        </div>
+                        <div class="slide-prev ">
+                            <svg width="48" height="49" viewBox="0 0 48 49" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M35.4142 24.3575L24.7071 13.6504L23.2929 15.0646L31.5858 23.3575H12V25.3575H31.5858L23.2929 33.6504L24.7071 35.0646L35.4142 24.3575Z"
+                                    fill="#B44406" />
+                                <path
+                                    d="M0.5 10.3574C0.5 5.11072 4.75329 0.857422 10 0.857422H38C43.2467 0.857422 47.5 5.11072 47.5 10.3574V38.3574C47.5 43.6041 43.2467 47.8574 38 47.8574H10C4.75329 47.8574 0.5 43.6041 0.5 38.3574V10.3574Z"
+                                    stroke="#B44406" />
+                            </svg>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section class="c-tabs-content" id="howtoparticipate">
+        <div class="container">
+            <h4>{{participate_heading}}</h4>
+            <h1>{{participate_subheading}}</h1>
+            <i class="dec-ribbon"></i>
+
+            <div class="c-tabs">
+                <div class="tab-links-wrap">
+                    <ul class="tab-links">
+                        <li><a href="#" data-tab-id="tab-content-1" data-tab-name="tabs-content"
+                                class="c-btn-a active">{{home_button}}</a>
+                        </li>
+                        <li><a href="#" data-tab-id="tab-content-2" data-tab-name="tabs-content"
+                                class="c-btn-a">{{schools_button}}</a>
+                        </li>
+                        <li><a href="#" data-tab-id="tab-content-3" data-tab-name="tabs-content"
+                                class="c-btn-a">{{office_button}}</a>
+                        </li>
+                        <li><a href="#" data-tab-id="tab-content-4" data-tab-name="tabs-content"
+                                class="c-btn-a">{{celebrationzones_button}}</a>
+                        </li>
+                        <li><a href="#" data-tab-id="tab-content-5" data-tab-name="tabs-content"
+                                class="c-btn-a">{{parades_button}}</a>
+                        </li>
+                    </ul>
+                    <div class="tab-links-select">
+                        <select name="tabs-content" id="tabs-select-1" class="tab-select">
+                            <option value="tab-content-1">{{home_button}}</option>
+                            <option value="tab-content-2">{{office_button}}</option>
+                            <option value="tab-content-3">{{schools_button}}</option>
+                            <option value="tab-content-4">{{celebrationzones_button}}</option>
+                            <option value="tab-content-5">{{parades_button}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tabs-content">
+                    <section data-tab-id="tab-content-1" class="active tab-content-area" data-tab-name="tabs-content">
+                        <div class="c-content-area">
+                            <div class="img-area">
+                                <div class="c-img">
+                                    <h2 class="img-title">{{school_img_title}}</h2>
+
+                                    <img src="{{img_source}}" alt="group selfi in kids-school" class="zoom-image">
+
+                                </div>
+                            </div>
+                            <div class="txt-area">
+                                <h3 class="sub-title">{{txt_area_title}}</h3>
+                                <p>{{tx_area_description}}</p>
+                                <ul class="c-special-links">
+                                    <li><a href="{{download_brandkit}}" target="_blank">{{brand_guide_link}}</a></li>
+                                    <li><a href="{{celebrationkit_link}}" target="_blank">{{celebration_kit_link}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-tab-id="tab-content-2" class="tab-content-area" data-tab-name="tabs-content">
+                        <div class="c-content-area">
+                            <div class="img-area">
+                                <div class="c-img">
+                                    <h2 class="img-title">{{school_img_title}}</h2>
+                                    <img src="{{img_source}}" alt="group selfi in kids-school">
+                                </div>
+                            </div>
+                            <div class="txt-area">
+                                <h3 class="sub-title">{{school_heading}}</h3>
+                                <p>{{school_description}}</p>
+                                <ul class="c-special-links">
+                                    <li><a href="{{download_brandkit}}" target="_blank">{{brand_guide_link}}</a></li>
+                                    <li><a href="{{celebrationkit_link}}" target="_blank">{{celebration_kit_link}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-tab-id="tab-content-3" class="tab-content-area" data-tab-name="tabs-content">
+                        <div class="c-content-area">
+                            <div class="img-area">
+                                <div class="c-img">
+                                    <h2 class="img-title">3 {{office_img_title}}</h2>
+                                    <img src="{{img_source}}" alt="group selfi in kids-school">
+                                </div>
+                            </div>
+                            <div class="txt-area">
+                                <h3 class="sub-title">{{office_heading}}</h3>
+                                <p>{{office_description}}</p>
+                                <ul class="c-special-links">
+                                    <li><a href="{{download_brandkit}}" target="_blank">{{brand_guide_link}}</a></li>
+                                    <li><a href="{{celebrationkit_link}}" target="_blank">{{celebration_kit_link}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-tab-id="tab-content-4" class="tab-content-area" data-tab-name="tabs-content">
+                        <div class="c-content-area">
+                            <div class="img-area">
+                                <div class="c-img">
+                                    <h2 class="img-title">{{celebration_zones_img_title}}</h2>
+                                    <img src="{{img_source}}" alt="group selfi in kids-school">
+                                </div>
+                            </div>
+                            <div class="txt-area">
+                                <h3 class="sub-title">{{celebration_zones_heading}}</h3>
+                                <p>{{celeberation_zones_description}}</p>
+                                <ul class="c-special-links">
+                                    <li><a href="{{download_brandkit}}" target="_blank">{{brand_guide_link}}</a></li>
+                                    <li><a href="{{celebrationkit_link}}" target="_blank">{{celebration_kit_link}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-tab-id="tab-content-5" class="tab-content-area" data-tab-name="tabs-content">
+                        <div class="c-content-area">
+                            <div class="img-area">
+                                <div class="c-img">
+                                    <h2 class="img-title">{{parades_img_title}}</h2>
+                                    <img src="{{img_source}}" alt="group selfi in kids-school">
+                                </div>
+                            </div>
+                            <div class="txt-area">
+                                <h3 class="sub-title">{{parades_heading}}</h3>
+                                <p>{{parades_description}}</p>
+                                <ul class="c-special-links">
+                                    <li><a href="{{download_brandkit}}" target="_blank">{{brand_guide_link}}</a></li>
+                                    <li><a href="{{celebrationkit_link}}" target="_blank">{{celebration_kit_link}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="c-sec-qa" id="faqs">
+        <div class="container">
+            <img src="assets/img/camels-group.svg" class="camels-group" />
+            <i class="deco-strip">
+                <i class="deco-stamp"></i>
+            </i>
+            <div class="sec-1">
+                <h1>
+                    {{questions_heading}}<br>
+                    {{questions_heading_1}}<br>
+                    {{questions_heading_2}}
+                </h1>
+            </div>
+            <div class="sec-2" id="faq">
+                <div class="c-tabs">
+                    <div class="tab-links-wrap">
+                        <ul class="tab-links">
+                            <li><a href="#" data-tab-id="tab-1" data-tab-name="tabs-qa"
+                                    class="c-btn-a active">{{tab_item_1}}</a>
+                            </li>
+                            <li><a href="#" data-tab-id="tab-2" data-tab-name="tabs-qa"
+                                    class="c-btn-a">{{tab_item_2}}</a>
+                            </li>
+                            <!-- <li><a href="#" data-tab-id="tab-3" data-tab-name="tabs-qa"
+                                    class="c-btn-a">{{tab_item_3}}</a>
+                            </li>
+                            <li><a href="#" data-tab-id="tab-4" data-tab-name="tabs-qa"
+                                    class="c-btn-a">{{tab_item_4}}</a>
+                            </li> -->
+                        </ul>
+                        <div class="tab-links-select">
+                            <select name="tabs-content" id="tabs-select-2" class="tab-select">
+                                <option value="tab-1">{{tab_item_1}}</option>
+                                <option value="tab-2">{{tab_item_2}}</option>
+                                <!-- <option value="tab-3">{{tab_item_3}}</option>
+                                <option value="tab-4">{{tab_item_4}}</option> -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tabs-content">
+                        <section data-tab-id="tab-1" class="active tab-content-area" data-tab-name="tabs-qa">
+                            <h1 class="c-title">{{faq_category_1}}</h1>
+                            <div class="c-accordion js-is-accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1">{{question_1}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_1}} <a href="#">facebook</a></p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1">{{question_2}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_2}}</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1">{{question_3}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_3}}</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <section data-tab-id="tab-2" class="tab-content-area" data-tab-name="tabs-qa">
+                            <h1 class="c-title">{{faq_category_2}}</h1>
+                            <div class="c-accordion js-is-accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1">{{question_4}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_4}}</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1"> {{question_5}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_5}}</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1"> {{question_6}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_6}}</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1">{{question_7}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_7}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section data-tab-id="tab-3" class="tab-content-area" data-tab-name="tabs-qa">
+                            <div class="c-accordion js-is-accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1"> {{question_1}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_1}}</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1">{{question_2}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_2}}</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1">{{question_3}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_3}}</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1"> {{question_4}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_4}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section data-tab-id="tab-4" class="tab-content-area" data-tab-name="tabs-qa">
+                            <div class="c-accordion js-is-accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1">3 {{question_1}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_1}}</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1">3 {{question_2}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_2}}</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1">3 {{question_3}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_3}}</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-title">
+                                        <h2 class="c-title-1">3 {{question_4}}</h2>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>{{answer_4}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="c-marquee">
+        <div id="marquee" class="marquee"></div>
+    </section>
+
+    <footer class="c-footer">
+        <div class="container">
+            <div class="f-top">
+                <div class="sec-a">
+                    <div class="sec-col-1">
+                        <a href="#" class="logo">
+                            <img src="{{logo_white_src}}" alt="{{footerLogoAlt}}" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="sec-col-2">
+                        <nav class="is-nav">
+                            <h6 class="nav-title">{{connectTitle}}</h6>
+                            <ul class="nav-list">
+                                <li><a href="#" class="js-open-contact">{{contactUsText}}</a></li>
+                            </ul>
+                            <ul class="social-list">
+                                <li><a href="{{fblink}}" target="_blank">
+                                        <svg width="24" height="25" viewBox="0 0 24 25"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M9.13162 12.2615V23.0075C9.13042 23.0431 9.13625 23.0786 9.14876 23.112C9.16128 23.1453 9.18024 23.1758 9.20457 23.2019C9.22889 23.2279 9.2581 23.2488 9.29053 23.2635C9.32295 23.2782 9.35797 23.2864 9.39356 23.2875H13.1326C13.2044 23.2849 13.2722 23.254 13.3213 23.2016C13.3703 23.1491 13.3967 23.0794 13.3945 23.0075V12.0885H16.1038C16.1715 12.0864 16.2358 12.0589 16.2842 12.0114C16.3325 11.964 16.3613 11.9002 16.3647 11.8325L16.6257 8.54155C16.6289 8.50331 16.6246 8.46481 16.6129 8.42826C16.6013 8.3917 16.5825 8.35781 16.5577 8.32855C16.5339 8.30052 16.5044 8.27797 16.4711 8.26244C16.4378 8.2469 16.4015 8.23875 16.3647 8.23855H13.3935V5.90055C13.3857 5.64631 13.4789 5.39935 13.6529 5.21378C13.8268 5.0282 14.0671 4.91916 14.3213 4.91055H16.4097C16.4817 4.9082 16.5498 4.8774 16.5991 4.82491C16.6484 4.77242 16.6748 4.70253 16.6727 4.63055V1.34055C16.6748 1.26857 16.6484 1.19867 16.5991 1.14618C16.5498 1.09369 16.4817 1.0629 16.4097 1.06055H12.8796C11.8526 1.09501 10.881 1.53542 10.1781 2.28524C9.47512 3.03506 9.09808 4.0331 9.12962 5.06055V8.23255H7.26011C7.18833 8.23515 7.1205 8.26606 7.07142 8.31852C7.02235 8.37098 6.99601 8.44073 6.99817 8.51255V11.8045C6.99601 11.8764 7.02235 11.9461 7.07142 11.9986C7.1205 12.051 7.18833 12.0819 7.26011 12.0845H9.12962L9.13162 12.2615Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </a></li>
+                                <li><a href="{{instalink}}" target="_blank">
+                                        <svg width="24" height="25" viewBox="0 0 24 25"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M18.3057 4.47984C18.0268 4.47984 17.7541 4.56258 17.5221 4.71759C17.2902 4.87261 17.1094 5.09294 17.0026 5.35074C16.8958 5.60854 16.8678 5.89223 16.9221 6.16594C16.9765 6.43966 17.1107 6.69111 17.3079 6.88851C17.505 7.08592 17.7563 7.2204 18.0299 7.27498C18.3034 7.32955 18.587 7.30176 18.8448 7.19511C19.1026 7.08847 19.3229 6.90776 19.4781 6.67583C19.6332 6.44391 19.7161 6.17117 19.7163 5.89211C19.7163 5.70679 19.6798 5.52328 19.609 5.35207C19.5381 5.18086 19.4342 5.02529 19.3032 4.89425C19.1722 4.76321 19.0167 4.65926 18.8455 4.58834C18.6744 4.51742 18.491 4.47984 18.3057 4.47984ZM12.0362 6.28945C10.8645 6.28945 9.71909 6.63703 8.74486 7.28826C7.77063 7.93948 7.01132 8.86508 6.56293 9.94802C6.11454 11.031 5.99722 12.2226 6.22581 13.3722C6.45439 14.5219 7.01862 15.5779 7.84713 16.4067C8.67564 17.2356 9.73123 17.8 10.8804 18.0287C12.0296 18.2574 13.2207 18.14 14.3032 17.6915C15.3857 17.2429 16.311 16.4833 16.9619 15.5087C17.6129 14.534 17.9603 13.3882 17.9603 12.216C17.9603 10.6442 17.3362 9.13675 16.2252 8.0253C15.1142 6.91385 13.6073 6.28945 12.0362 6.28945ZM12.0362 16.0123C11.2857 16.0123 10.5521 15.7897 9.92813 15.3727C9.30413 14.9556 8.81775 14.3629 8.53047 13.6693C8.24319 12.9757 8.16791 12.2125 8.31416 11.4762C8.46041 10.7399 8.82161 10.0634 9.3521 9.5324C9.88259 9.0014 10.5585 8.63967 11.2945 8.49294C12.0305 8.34622 12.7934 8.42109 13.4869 8.70809C14.1803 8.99509 14.7731 9.48133 15.1903 10.1053C15.6076 10.7294 15.8305 11.4631 15.8309 12.2139C15.8311 12.7125 15.733 13.2064 15.5424 13.6671C15.3518 14.1279 15.0723 14.5466 14.7199 14.8993C14.3675 15.252 13.9492 15.5319 13.4887 15.7228C13.0282 15.9138 12.5346 16.0122 12.0362 16.0123ZM23.9903 7.28927C23.9889 5.37159 23.2264 3.53296 21.8704 2.17746C20.5145 0.82197 18.676 0.0605463 16.7591 0.0605469H7.23119C6.28149 0.0605469 5.34108 0.247699 4.46369 0.611315C3.58629 0.974931 2.78908 1.50789 2.11759 2.17975C1.44609 2.85162 0.913472 3.64923 0.550134 4.52704C0.186796 5.40485 -0.000141666 6.34566 8.05501e-08 7.29575V16.8372C0.00285973 18.754 0.765979 20.5912 2.12178 21.9455C3.47758 23.2999 5.31523 24.0605 7.23119 24.0605H16.7688C18.6866 24.0605 20.5259 23.2984 21.882 21.9417C23.2381 20.5851 24 18.745 24 16.8264L23.9903 7.28927ZM21.7238 16.8318C21.7238 17.4841 21.5954 18.1299 21.3459 18.7325C21.0964 19.3351 20.7307 19.8826 20.2697 20.3438C19.8087 20.805 19.2614 21.1709 18.659 21.4205C18.0567 21.6701 17.4111 21.7985 16.7591 21.7985H7.23119C5.91447 21.7985 4.65168 21.2753 3.72062 20.3438C2.78956 19.4124 2.26649 18.1491 2.26649 16.8318V7.29035C2.26792 5.97403 2.79162 4.71211 3.72253 3.78184C4.65343 2.85157 5.91541 2.32904 7.23119 2.32904H16.7688C18.0855 2.32904 19.3483 2.85231 20.2794 3.78375C21.2104 4.71519 21.7335 5.97849 21.7335 7.29575L21.7238 16.8318Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a></li>
+                                <li><a href="{{twlink}}" target="_blank">
+                                        <svg width="24" height="25" viewBox="0 0 24 25"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1291_59192)">
+                                                <path
+                                                    d="M12.8034 11.6509L18.2043 19.3761H15.9878L11.5806 13.0723V13.0719L10.9335 12.1465L5.78516 4.78223H8.00168L12.1564 10.7255L12.8034 11.6509Z"
+                                                    fill="white" />
+                                                <path
+                                                    d="M21.4067 0.0605469H2.59325C1.16108 0.0605469 0 1.22162 0 2.6538V21.4673C0 22.8995 1.16108 24.0605 2.59325 24.0605H21.4067C22.8389 24.0605 24 22.8995 24 21.4673V2.6538C24 1.22162 22.8389 0.0605469 21.4067 0.0605469ZM15.308 20.413L10.8481 13.9223L5.26435 20.413H3.82122L10.2073 12.99L3.82122 3.69576H8.69203L12.9152 9.84206L18.2026 3.69576H19.6458L13.5562 10.7745H13.5558L20.1788 20.413H15.308Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1291_59192">
+                                                    <rect width="24" height="24" fill="white"
+                                                        transform="translate(0 0.0605469)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                    </a></li>
+                                <li><a href="{{youtubelink}}" target="_blank">
+                                        <svg width="24" height="25" viewBox="0 0 24 25"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M23.9954 8.28118C24.0404 6.68373 23.5157 5.13159 22.5363 3.96537C21.557 2.79914 20.2031 2.1141 18.7716 2.06055H5.22445C3.79302 2.1141 2.43909 2.79914 1.45976 3.96537C0.480436 5.13159 -0.0442928 6.68373 0.000721375 8.28118V15.8399C-0.0442928 17.4374 0.480436 18.9895 1.45976 20.1557C2.43909 21.3219 3.79302 22.007 5.22445 22.0605H18.7716C20.2031 22.007 21.557 21.3219 22.5363 20.1557C23.5157 18.9895 24.0404 17.4374 23.9954 15.8399V8.28118ZM15.4477 12.443L10.045 15.9722C9.81034 16.1234 9.59826 15.9209 9.59826 15.6032V8.35768C9.59826 8.03553 9.81598 7.83216 10.0514 7.99323L15.4929 11.7123C15.5456 11.7557 15.5875 11.8133 15.6149 11.8797C15.6423 11.9461 15.6542 12.0191 15.6496 12.092C15.6449 12.1649 15.6238 12.2353 15.5882 12.2966C15.5527 12.358 15.5038 12.4083 15.4461 12.443H15.4477Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </a></li>
+                                <li><a href="{{tiktoklink}}">
+                                        <svg width="25" height="25" viewBox="0 0 500 500"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M455.785 206.379C412.659 207.337 372.409 193.92 337.908 169.003V340.547C337.908 405.715 297.658 463.216 236.324 486.216C175.948 509.216 106.947 491.966 64.7796 443.09C21.654 393.256 13.9872 323.297 44.6543 265.796C75.3214 209.254 138.572 177.629 203.74 186.254V272.505C174.031 262.921 141.447 273.463 123.239 298.38C105.988 324.256 105.988 357.798 124.197 382.715C142.406 407.632 174.989 418.173 203.74 408.59C233.449 399.007 253.574 371.215 253.574 340.547V5.12622H337.908C337.908 12.793 337.908 19.5014 339.825 27.1682C345.575 58.7936 363.784 86.5857 391.576 103.836C409.784 116.294 432.785 123.003 455.785 123.003V206.379Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </a></li>
+
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="sec-b">
+                    <nav class="is-nav">
+                        <h6 class="nav-title">{{navigateTitle}}</h6>
+                        <ul class="nav-list">
+                            <li><a href="{{what_on_link}}">{{whatsOnText}}</a></li>
+                            <li><a href="{{about_us_link}}">{{aboutUsText}}</a></li>
+                            <li><a href="{{faq_link}}">{{faqsText}}</a></li>
+                            <li><a href="{{pactivities}}">{{pastCelebrationsText}}</a></li>
+                            <!-- <li><a href="#">{{shop_text}}</a></li> -->
+                            <li><a href="{{participate_link}}">{{howToParticipateText}}</a></li>
+                            <!-- <li><a href="#">{{ticketsText}}</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="f-bot">
+                <p class="copy">{{copyrightReserve}}</p>
+                <a href="{{termslink}}" class="t-n-c_link">{{termsAndConditions}}</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="c-popup-video">
+        <div class="popup-overlay js-close-video-popup"></div>
+        <div class="popup-content-box">
+            <div class="popup-close-btn js-close-video-popup">
+                <i></i>
+                <i></i>
+            </div>
+            <div id="player" data-plyr-provider="youtube" data-plyr-embed-id="_9gcklXGStA"></div>
+        </div>
+    </div>
+
+    <section class="c-contact-form js-contact-form">
+        <div class="popup-overlay hidden js-close-contact"></div>
+        <div id="popup" class="popup hidden">
+            <div class="popup-content">
+                <div class="close-btn-area">
+                    <button class="close js-close-contact"><img src="/assets/img/icons/close.svg"></button>
+                </div>
+
+                <h2 class="c-f-brown">{{header}}</h2>
+                <p>{{contact_description}}</p>
+                <form>
+
+                    <div class="form-fields">
+                        <div class="row">
+                            <div class="col">
+                                <label>{{inquiry_label}}</label>
+                                <select>
+                                    <option>{{inquiry_option1}}</option>
+                                    <option>{{inquiry_option2}}</option>
+                                    <option>{{inquiry_option3}}</option>
+                                    <option>{{inquiry_option4}}</option>
+                                    <option>{{inquiry_option5}}</option>
+                                </select>
+                            </div>
+                            <div class="col" style="margin-bottom: 0px;">
+                                <input type="hidden" id="countryCode" value="ae">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>{{first_name_label}}</label>
+                                <input id="first_name" type="text" placeholder="{{first_name_placeholder}}"
+                                    pattern="^(?=.*[A-Za-z])[A-Za-z\s]*$" maxlength="30" required>
+                            </div>
+                            <div class="col">
+                                <label>{{last_name_label}}</label>
+                                <input id="last_name" type="text" placeholder="{{last_name_placeholder}}"
+                                    pattern="^(?=.*[A-Za-z])[A-Za-z\s]*$" maxlength="30" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>{{phone_label}}</label>
+                                <div class="custom-select">
+                                    <input id="phone" type="tel" placeholder="{{phone_placeholder}}" maxlength="20"
+                                        pattern="^\+?[0-9\s]{7,}$" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label>{{email_label}}</label>
+                                <input type="email" placeholder="{{email_placeholder}}" pattern=".+@.+\..+"
+                                    maxlength="100" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-0">
+                                <label>{{message_label}}</label>
+                                <textarea id="txtarea" placeholder="{{message_placeholder}}" maxlength="400"
+                                    required></textarea>
+                                <p class="c-char-count">{{msg_count}} <span id="charCount">400</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">{{send_button_text}}</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="cookie-consent">
+        <div id="privacy-popup" class="privacy-popup">
+            <a href="#" class="close-privacy js-not-allow-policy">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M14.1951 15.1381L0.861816 1.80475L1.80463 0.861938L15.138 14.1953L14.1951 15.1381Z"
+                        fill="#603F2B" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.861816 14.1953L14.1951 0.861938L15.138 1.80475L1.80463 15.1381L0.861816 14.1953Z"
+                        fill="#603F2B" />
+                </svg>
+                <span>close</span>
+            </a>
+            <div class="popup-content">
+                <h2>WE RESPECT YOUR PRIVACY</h2>
+                <p>We use cookies to operate this website, improve usability, personalise your experience, and improve
+                    our marketing. Your privacy is important to us, and we will never sell your data.</p>
+                <div class="buttons">
+                    <button id="not-allow" class="c-btn" onclick="declinePrivacyPolicy()">Reject Cookies</button>
+                    <button id="allow" class="c-btn" onclick="acceptPrivacyPolicy()">Accept Cookies</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Critical Script with async -->
+    <script src="/assets/js/critical-script.js"></script>
+
+    <!-- Other Scripts -->
+    <script defer src="/assets/js/script.js"></script>
+
+    <!-- inect post-script.js after everything loaded -->
+    <script>
+        // on window load
+        window.addEventListener('load', function () {
+            // inject post-script.js
+            var script = document.createElement('script');
+            script.src = '/assets/js/post-script.js';
+            document.body.appendChild(script);
+        });
+    </script>
+</body>
+
+</html>

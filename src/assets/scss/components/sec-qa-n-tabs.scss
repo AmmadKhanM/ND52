@@ -1,0 +1,410 @@
+.c-marquee {
+    background: var(--blue);
+
+    .marquee {
+        /*rtl:ignore*/
+        background: url(../img/strip-union-day.svg) repeat-x / auto 100%;
+        width: 100%;
+        height: 83px;
+
+        @media (max-width: 1600px) {
+            height: 73px;
+        }
+
+        @media (max-width: 1400px) {
+            height: 63px;
+        }
+
+        @media (max-width: 1200px) {
+            height: 53px;
+        }
+
+        @media (max-width: 1023px) {
+            height: 46px;
+        }
+    }
+
+    &.is--red {
+        background: var(--secondary-color);
+    }
+
+    &.is--black {
+        background: var(--black-shade);
+    }
+
+    &.is--orange {
+        background: var(--orange);
+    }
+}
+
+.c-sec-qa {
+    background: var(--blue);
+    color: var(--white);
+    padding: 80px 0;
+
+    .c-btn-a {
+        &:hover {
+            color: var(--blue);
+        }
+    }
+
+    // 767
+    @media (max-width: 767px) {
+        padding: 40px 0;
+    }
+
+    .container {
+        display: flex;
+        width: 100%;
+        min-height: 800px;
+
+        // 1300
+        @media (max-width: 1300px) {
+            flex-direction: column;
+            min-height: 0;
+        }
+    }
+
+    .sec-1 {
+        padding-right: 20px;
+        width: 30%;
+        position: relative;
+        z-index: 1;
+
+        // 1300
+        @media (max-width: 1300px) {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    .sec-2 {
+        width: 70%;
+        position: relative;
+        z-index: 1;
+
+        @media (max-width: 1300px) {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    .deco-strip {
+        position: absolute;
+        top: -80px;
+        left: 24px;
+        display: block;
+        background: url(../img/union.svg) center top / contain;
+        height: calc(100% + 160px);
+        width: 240px;
+
+        @media (max-width: 1600px) {
+            width: 200px;
+        }
+
+        // 1400
+        @media (max-width: 1400px) {
+            width: 160px;
+        }
+
+        // 1300
+        @media (max-width: 1300px) {
+            width: 120px;
+            left: 50px;
+        }
+
+        // 1023
+        @media (max-width: 1023px) {
+            width: 100px;
+        }
+
+        // 767
+        @media (max-width: 767px) {
+            width: 84px;
+            top: -40px;
+            height: calc(100% + 80px);
+        }
+    }
+
+    .deco-stamp {
+        position: absolute;
+        bottom: 0;
+        left: 8px;
+        display: block;
+
+        height: calc(100% - 325px);
+        width: 390px;
+        z-index: 0;
+
+        // 1600px
+        @media (max-width: 1600px) {
+            width: 340px;
+        }
+
+        // 1400px
+        @media (max-width: 1400px) {
+            width: 290px;
+        }
+
+        @media (max-width: 1300px) {
+            display: none;
+        }
+    }
+
+
+    .deco-stamp:dir(rtl) {
+        transform: scaleX(-1);
+    }
+
+    .c-title-1 {
+        color: var(--white);
+    }
+
+    .c-title {
+        margin: 0 0 40px 0;
+        font-size: 44px;
+        /* Default font size in pixels */
+
+        @media (max-width: 767px) {
+            font-size: 28px;
+            /* Adjust the font size for screens up to 767px width */
+            margin: 0 0 28px 0;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 36px;
+            /* Adjust the font size for screens between 768px and 991px width */
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            font-size: 40px;
+            /* Adjust the font size for screens between 992px and 1199px width */
+        }
+    }
+
+    .tab-links-wrap {
+        margin-bottom: 40px;
+
+        @media (max-width: 767px) {
+            margin-bottom: 28px;
+        }
+    }
+
+    .accordion-content a {
+        color: var(--white);
+        font-weight: bold;
+    }
+}
+
+.c-tabs-content {
+    padding: 80px 0;
+    color: var(--white);
+    background: var(--green);
+
+    // 1200
+    @media (max-width: 1200px) {
+        padding: 60px 0;
+    }
+
+    // 1023
+    @media (max-width: 1023px) {
+        padding: 55px 0;
+    }
+
+    // 767
+    @media (max-width: 767px) {
+        padding: 40px 0;
+    }
+
+    h1 {
+
+        max-width: 1100px;
+        margin-bottom: 32px;
+    }
+
+    .dec-ribbon {
+        display: block;
+        width: 100%;
+        height: 19px;
+        background: repeat-x url(../img/ribon.svg) left center / contain;
+    }
+
+    .c-tabs {
+        margin-top: 48px;
+
+        // 767
+        @media (max-width: 767px) {
+            margin-top: 40px;
+        }
+
+        .tabs-content {
+            margin-top: 40px;
+
+            @media (max-width: 767px) {
+                margin-top: 28px;
+            }
+        }
+    }
+}
+
+.c-content-area {
+    display: flex;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
+
+    .img-area {
+        position: relative;
+        width: 64%;
+        padding-right: 64px;
+
+        // 1600
+        @media (max-width: 1600px) {
+            padding-right: 54px;
+            width: 60%;
+        }
+
+        // 1400
+        @media (max-width: 1400px) {
+            padding-right: 44px;
+            width: 58%;
+        }
+
+        // 1300
+        @media (max-width: 1300px) {
+            padding-right: 25px;
+        }
+
+        // 1200
+        @media (max-width: 1200px) {
+            padding-right: 0;
+            width: 100%;
+            margin-bottom: 32px;
+        }
+    }
+
+    .txt-area {
+        width: 36%;
+
+        // 1600
+        @media (max-width: 1600px) {
+            width: 40%;
+        }
+
+        // 1400
+        @media (max-width: 1400px) {
+            width: 42%;
+        }
+
+        // 1200
+        @media (max-width: 1200px) {
+            width: 100%;
+        }
+    }
+
+
+    // .sub-title {
+    //     margin-bottom: 24px;
+
+    //     font-size: 32px;
+    //     font-weight: 700;
+    //     line-height: 112%;
+    //     letter-spacing: 0.32px;
+
+    //     @media (max-width: 1600px) {
+    //         font-size: 28px;
+    //         line-height: 112%;
+    //         letter-spacing: 0.28px;
+    //     }
+
+    //     // 1200px
+    //     @media (max-width: 1200px) {
+    //         font-size: 24px;
+    //         line-height: 112%;
+    //         letter-spacing: 0.24px;
+    //     }
+
+    //     // 1023px
+    //     @media (max-width: 1023px) {
+    //         font-size: 22px;
+    //         line-height: 112%;
+    //         letter-spacing: 0.22px;
+    //     }
+
+    //     @media (max-width: 767px) {
+    //         font-size: 20px;
+    //         line-height: 115%;
+    //         letter-spacing: 0.2px;
+    //         margin-bottom: 16px;
+    //     }
+    // }
+}
+
+.c-img {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.50));
+        z-index: 1;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .img-title {
+        position: absolute;
+        bottom: 32px;
+        left: 0;
+        padding: 0 32px;
+        z-index: 2;
+        margin-bottom: 0;
+
+
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 112%;
+        letter-spacing: 0.38px;
+
+        // 1600px
+        @media (max-width: 1600px) {
+            font-size: 32px;
+            line-height: 112%;
+            letter-spacing: 0.32px;
+        }
+
+        // 1200px
+        @media (max-width: 1200px) {
+            font-size: 28px;
+            line-height: 112%;
+            letter-spacing: 0.28px;
+        }
+
+        // 1023px
+        @media (max-width: 1023px) {
+            font-size: 24px;
+            line-height: 112%;
+            letter-spacing: 0.24px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 20px;
+            line-height: 115%;
+            letter-spacing: 0.22px;
+            padding: 12px 12px 12px;
+            bottom: 0;
+        }
+    }
+}
