@@ -1209,3 +1209,27 @@ window.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+$('.js-content_slider').slick({
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    adaptiveHeight: true,
+    dots: false,
+    swipe: false,
+    responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+      ],
+  });
