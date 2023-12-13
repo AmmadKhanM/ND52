@@ -500,7 +500,7 @@ $anim-dur_x2: 1s;
 
     .frame--3 .container {
         display: flex;
-        width: 1146px;
+        // width: 1146px;
 
         .c-title-2 {
             font-size: 38px;
@@ -1259,13 +1259,13 @@ $anim-dur_x2: 1s;
             }
 
             &.bg--3 {
-                background-color: var(--blue);
+                background-color: var(--secondary-color);
                 background-image: url(../img/exp/birds-bg.svg);
 
                 @media (max-width: 1250px) {
 
                     background: url(../img/exp/birds-bg-bot.svg) no-repeat bottom 30px right -10px / 200px,
-                        url(../img/exp/birds-bg-top.svg) no-repeat top 70px left -70px / 250px var(--blue);
+                        url(../img/exp/birds-bg-top.svg) no-repeat top 70px left -70px / 250px var(--secondary-color);
                 }
             }
 
@@ -2073,7 +2073,7 @@ $anim-dur_x2: 1s;
 
     .c-experience-sec .frame--3 .container {
 
-        width: initial;
+        // width: initial;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -2372,35 +2372,78 @@ $anim-dur_x2: 1s;
             position: absolute;
             // right: 50px;
             // top: 50%;
-            right: 12vw;
+            right: 150px;
             top: 40vh;
-            width: 700px;
-            height: 400px;
-            transform: translateY(64vh);
+            // width: 707px;
+            // height: 398px;
+            width: 36.9vw;
+            height: 20.7vw;        
+            transform: translateY(66vh);
             // transition: all 0.75s ease-in-out;
             transition: right .75s ease-in-out .75s, top .75s ease-in-out .75s, width .75s ease-in-out .75s, height .75s ease-in-out .75s, transform .75s ease-in-out;
-            z-index: 1;
+            z-index: 9;
+            border-radius: 10px;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            @media (max-width: 1680px) {
+                right: 100px;
+            }
+            @media (max-width: 1400px) {
+                right: 60px;
+            }
+            @media (max-width: 992px) {
+                right: 0px;
+                top: 0;
+                width: calc(100% - 60px);
+                height: 398px;
+                position: relative;
+            }
         }
         > .container {
             > .col-setting {
                 // transform: translateY(35vh);
-                transform: translateY(64vh);
+                transform: translateY(66vh);
                 transition: all 0.75s ease-in-out;
                 // opacity: 0;
             }
-            > .colm-6:not(.col-setting) {
-                // transform: translateY(30vh);
-                transform: translateY(64vh);
-                transition: all 0.75s ease-in-out;
-                // animation-delay: .75s;
-                // opacity: 0;
-                .c-img-box{
-                    transition: all 0.75s ease-in-out;
+            .fz-title{
+                // max-width: 823px;
+                max-width: 42.9vw;
+                @media (max-width: 1400px) {
+                   
+                    font-size: 33px;
+                }
+                @media (max-width: 992px) {
+                    max-width: 100%;
+                }
+
+            }
+            .fz-para{
+                // max-width: 561px;
+                max-width: 26.9vw;
+                @media (max-width: 1400px) {
+                    max-width: 36.9vw;
+                }
+                @media (max-width: 992px) {
+                    max-width: 100%;
                 }
             }
-            .col-1_row-b .c-btn-b {
-                transform: translateY(0);
-            }
+            // > .colm-6:not(.col-setting) {
+            //     // transform: translateY(30vh);
+            //     transform: translateY(64vh);
+            //     transition: all 0.75s ease-in-out;
+            //     // animation-delay: .75s;
+            //     // opacity: 0;
+            //     .c-img-box{
+            //         transition: all 0.75s ease-in-out;
+            //     }
+            // }
+            // .col-1_row-b .c-btn-b {
+            //     transform: translateY(0);
+            // }
         }
     }
     .frame--4 {
@@ -2461,16 +2504,23 @@ $anim-dur_x2: 1s;
                 top: 0%;
                 width: 100%;
                 height: 100vh;
-                transform: translateY(-102vh);
+                transform: translateY(-100vh);
                 transition: right .70s ease-in-out, top .70s ease-in-out, width .70s ease-in-out, height .70s ease-in-out, transform .70s ease-in-out .70s;
                 opacity: 1;
+                @media (max-width: 992px) {
+                    right: 0px;
+                    top: 0;
+                    width: calc(100% - 60px);
+                    height: 398px;
+                    position: relative;
+                }
             }
             > .container {
-                > .colm-6:not(.col-setting) {
-                    // transform: translateY(-30vh);
-                    transform: translateY(-87vh);
+                // > .colm-6:not(.col-setting) {
+                //     // transform: translateY(-30vh);
+                //     transform: translateY(-87vh);
                     
-                }
+                // }
                 > .col-setting {
                     // transform: translateY(-26vh);
                     transform: translateY(-87vh);
@@ -2509,8 +2559,7 @@ $anim-dur_x2: 1s;
     &.is--active-frame-3 {
         .frame--3 {
             > .container {
-                > .col-setting,
-                > .colm-6:not(.col-setting) {
+                > .col-setting{
                     transform: translateY(0px);
                     // transition-delay: $anim-dur;
                     opacity: 1;
@@ -2539,12 +2588,15 @@ $anim-dur_x2: 1s;
     max-width: 100% !important;
     .container {
         max-width: 100%;
+        width: 100%;
         padding: 0 150px;
         @media (max-width: 1680px) {
             padding: 0 100px;
+            width: 100%;
         }
         @media (max-width: 1400px) {
             padding: 0 60px;
+            width: 100%;
         }
     }
 }
