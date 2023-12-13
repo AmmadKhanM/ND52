@@ -1,7 +1,7 @@
 $threads_height: 85px;
 $header_height: 106px;
 $thread_top: 84px;
-$anim-dur: 0.75s;
+$anim-dur: 1s;
 $anim-dur_x2: 1s;
 
 .c-experience-sec {
@@ -2512,13 +2512,13 @@ $anim-dur_x2: 1s;
                 > .col-setting,
                 > .colm-6:not(.col-setting) {
                     transform: translateY(0px);
-                    transition-delay: $anim-dur;
+                    // transition-delay: $anim-dur;
                     opacity: 1;
                 }
             }
             .c-img-frame-zoom{
                 transform: translateY(0vh);
-                transition-delay: $anim-dur;
+                // transition-delay: $anim-dur;
             }
         }
     }
@@ -2532,6 +2532,62 @@ $anim-dur_x2: 1s;
                 transform: translateY(0px);
                 transition-delay: $anim-dur;
             }
+        }
+    }
+}
+.custom-styling {
+    max-width: 100% !important;
+    .container {
+        max-width: 100%;
+        padding: 0 150px;
+        @media (max-width: 1680px) {
+            padding: 0 100px;
+        }
+        @media (max-width: 1400px) {
+            padding: 0 60px;
+        }
+    }
+}
+.sec-content-boxs {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    .postBox {
+        flex: 0 0 24%;
+        max-width: 24%;
+        &:nth-child(even) {
+            transform: translateY(30vh);
+            transition: all 3s ease;
+        }
+        .postImg {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .postContent {
+            .prgh {
+                margin-top: 32px;
+            }
+        }
+    }
+}
+.is--active-frame-1  {
+    .sec-content-boxs { 
+        .postBox {
+            &:nth-child(even) {
+                transform: translateY(110px);
+            } 
+        }
+    }
+}
+.is--gone-frame-1 {
+    .sec-content-boxs { 
+        .postBox {
+            &:nth-child(even) {
+                transform: translateY(-24vh);
+            } 
         }
     }
 }
