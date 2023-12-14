@@ -2628,12 +2628,12 @@ $anim-dur_x2: 1.5s;
             // right: 50px;
             // top: 50%;
             right: 150px;
-            top: 40vh;
+            top: 33vh;
             // width: 707px;
             // height: 398px;
             width: 36.9vw;
-            height: 20.7vw;        
-            transform: translateY(66vh);
+            height: 26.5vw;        
+            transform: translateY(67vh);
             // transition: all 0.75s ease-in-out;
             transition: right $anim-dur ease-in-out $anim-dur, top $anim-dur ease-in-out $anim-dur, width $anim-dur ease-in-out $anim-dur, height $anim-dur ease-in-out $anim-dur, transform $anim-dur ease-in-out;
             z-index: 9;
@@ -2654,7 +2654,7 @@ $anim-dur_x2: 1.5s;
                 right: 0px;
                 top: 0;
                 width: calc(100% - 48px);
-                height: auto;
+                height: 380px;
                 position: relative;
                 margin-bottom: 20px;
                 transform: translateY(78vh);
@@ -2670,9 +2670,8 @@ $anim-dur_x2: 1.5s;
             }
             .fz-title{
                 // max-width: 823px;
-                max-width: 42.9vw;
+                max-width: 41.6vw;
                 @media (max-width: 1400px) {
-                   
                     font-size: 33px;
                 }
                 @media (max-width: 992px) {
@@ -2681,6 +2680,9 @@ $anim-dur_x2: 1.5s;
                 }
                 @media (max-width: 767px) {
                     font-size: 24px;
+                }
+                @media (max-width: 1250px) {
+                    text-align: center;
                 }
 
             }
@@ -2826,7 +2828,7 @@ $anim-dur_x2: 1.5s;
                     right: 0px;
                     top: 0;
                     width: calc(100% - 48px);
-                    height: auto;
+                    height: 380px;
                     position: relative;
                     transition: all $anim-dur ease-in-out;
                 }
