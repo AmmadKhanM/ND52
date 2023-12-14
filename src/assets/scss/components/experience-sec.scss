@@ -2492,6 +2492,16 @@ $anim-dur_3_5: 3.5s;
 .c-experience-sec {
     .frame--0 {
         transform: translate(-50%, 20vh);
+        .c-title-5 {
+            font-size: 56px;
+            @media (max-width: 1250px) {
+                font-size: 50px;
+            }
+            @media (max-width: 991px) {
+                font-size: 45px;
+            }
+        }
+
         .mouse-icon .mouse {
             transition: all 0.75s ease-in-out;
             transform: translate(0, 50px);
