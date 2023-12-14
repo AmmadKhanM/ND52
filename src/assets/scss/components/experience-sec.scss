@@ -298,7 +298,7 @@ $anim-dur_x2: 1.5s;
         }
     }
 
-    .frame--1 {
+    .frame--3 {
         .c-meta-tags-wrap {
             display: flex;
             margin-bottom: 24px;
@@ -334,7 +334,7 @@ $anim-dur_x2: 1.5s;
         }
     }
 
-    .frame--3 {
+    .frame--1 {
         .c-img-box {
             img:not(.vid-play) {
                 max-height: calc(100vh - 620px);
@@ -408,7 +408,7 @@ $anim-dur_x2: 1.5s;
         }
     }
 
-    .frame--1 {
+    .frame--3 {
         width: 100%;
         max-width: 1146px;
     }
@@ -498,7 +498,7 @@ $anim-dur_x2: 1.5s;
         max-width: 605px;
     }
 
-    .frame--3 .container {
+    .frame--1 .container {
         display: flex;
         // width: 1146px;
 
@@ -1396,7 +1396,7 @@ $anim-dur_x2: 1.5s;
             }
         }
 
-        &.frame--3 {
+        &.frame--1 {
 
             // > .container>.colm-6,
             // > .container>.col-setting { 
@@ -1423,8 +1423,8 @@ $anim-dur_x2: 1.5s;
         }
     }
 
-    &.is--active-frame-1 {
-        .frame--1 {
+    &.is--active-frame-3 {
+        .frame--3 {
             transition-delay: $anim-dur;
 
             .col-1_row-b .c-btn-b,
@@ -1454,9 +1454,9 @@ $anim-dur_x2: 1.5s;
         }
     }
 
-    &.is--active-frame-3 {
+    &.is--active-frame-1 {
 
-        .frame--3 {
+        .frame--1 {
             // transition-delay: $anim-dur;
 
 
@@ -1576,7 +1576,7 @@ $anim-dur_x2: 1.5s;
                         }
 
                         .is--active-frame-5 &,
-                        .is--active-frame-1 & {
+                        .is--active-frame-3 & {
                             color: var(--orange);
 
                             &:hover {
@@ -1593,7 +1593,7 @@ $anim-dur_x2: 1.5s;
                             }
                         }
 
-                        .is--active-frame-3 & {
+                        .is--active-frame-1 & {
                             color: var(--blue);
 
                             &:hover {
@@ -2078,7 +2078,7 @@ $anim-dur_x2: 1.5s;
         padding: 0px 24px;
     }
 
-    .c-experience-sec .frame--3 .container {
+    .c-experience-sec .frame--1 .container {
 
         // width: initial;
         display: flex;
@@ -2349,7 +2349,7 @@ $anim-dur_x2: 1.5s;
             transform: translate(0, 50px);
         }
     }
-    .frame--1 {
+    .frame--3 {
         .container {
             > .c-meta-tags-wrap {
                 transform: translateY(24vh);
@@ -2373,7 +2373,7 @@ $anim-dur_x2: 1.5s;
             transform: translateY(30vh);
         }
     }
-    .frame--3 {
+    .frame--1 {
         opacity: 1;
         @media (max-width: 992px) {
             opacity: 0; 
@@ -2487,8 +2487,8 @@ $anim-dur_x2: 1.5s;
             }
         }
     }
-    &.is--gone-frame-1 {
-        .frame--1 {
+    &.is--gone-frame-3 {
+        .frame--3 {
             .container {
                 > .c-meta-tags-wrap {
                     transform: translateY(-30vh);
@@ -2515,8 +2515,8 @@ $anim-dur_x2: 1.5s;
             }
         }
     }
-    &.is--gone-frame-3 {
-        .frame--3 {
+    &.is--gone-frame-1 {
+        .frame--1 {
             .c-img-frame-zoom{
                 right: 0px;
                 top: 0%;
@@ -2563,8 +2563,8 @@ $anim-dur_x2: 1.5s;
     }
     
 
-    &.is--active-frame-1 {
-        .frame--1 {
+    &.is--active-frame-3 {
+        .frame--3 {
             .container {
                 > .c-title-4,
                 > p,
@@ -2575,8 +2575,8 @@ $anim-dur_x2: 1.5s;
             }
         }
     }
-    &.is--active-frame-3 {
-        .frame--3 {
+    &.is--active-frame-1 {
+        .frame--1 {
             opacity: 1;
             > .container {
                 > .col-setting{
@@ -2752,7 +2752,7 @@ $anim-dur_x2: 1.5s;
             }
         }
     }
-    &.is--active-frame-1  {
+    &.is--active-frame-3  {
         .sec-content-boxs { 
             .slick-track {
                 .slick-slide {
@@ -2769,7 +2769,7 @@ $anim-dur_x2: 1.5s;
             }
         }
     }
-    &.is--gone-frame-1 {
+    &.is--gone-frame-3 {
         .sec-content-boxs { 
             .slick-track {
                 .slick-slide {
