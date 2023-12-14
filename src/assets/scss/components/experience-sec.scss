@@ -2,7 +2,7 @@ $threads_height: 85px;
 $header_height: 106px;
 $thread_top: 84px;
 $anim-dur: 1s;
-$anim-dur_x2: 1s;
+$anim-dur_x2: 1.5s;
 
 .c-experience-sec {
     position: relative;
@@ -1228,7 +1228,7 @@ $anim-dur_x2: 1s;
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: all 0.3s ease-in-out;
+            transition: all $anim-dur ease-in-out;
             background: var(--secondary-color) url(../img/exp/bg-deer.png) no-repeat center center / contain;
             opacity: 0;
 
@@ -1237,13 +1237,13 @@ $anim-dur_x2: 1s;
             }
 
             &.bg--1 {
-                background-color: var(--orange);
+                background-color: var(--secondary-color);
                 background-image: url(../img/exp/stars-bg.svg);
                 background-size: 90% auto;
                 background-position: -100px;
 
                 @media (max-width: 1250px) {
-                    background: var(--orange) url(../img/exp/stars-bg-sm.svg) no-repeat bottom 70px right / 250px;
+                    background: var(--secondary-color) url(../img/exp/stars-bg-sm.svg) no-repeat bottom 70px right / 250px;
                 }
             }
 
@@ -1270,16 +1270,23 @@ $anim-dur_x2: 1s;
             }
 
             &.bg--4 {
-                background-color: var(--green);
-                background-image: url(../img/exp/trees-bg.svg);
+                background-color: var(--secondary-color);
+                // background-image: url(../img/exp/trees-bg.svg);
+                background-image: url(../img/exp/second-last-frame-img.jpg);
+                background-size: cover;
+                background-position: center center;
+                transition-delay: $anim-dur;
 
                 @media (max-width: 1250px) {
-                    background: var(--green) url(../img/exp/trees-bg-sm.svg) no-repeat bottom 70px right -70px / 300px;
+                    // background: var(--secondary-color) url(../img/exp/trees-bg-sm.svg) no-repeat bottom 70px right -70px / 300px;
+                    background-image: url(../img/exp/second-last-frame-img.jpg);
+                    background-size: cover;
+                    background-position: center center;
                 }
             }
 
             &.bg--5 {
-                background: var(--orange);
+                background: var(--secondary-color);
                 // background-image: url(../img/exp/circle-bg.png);
                 // background-size: 40% auto;
             }
@@ -2368,6 +2375,9 @@ $anim-dur_x2: 1s;
     }
     .frame--3 {
         opacity: 1;
+        @media (max-width: 992px) {
+            opacity: 0; 
+        }
         .c-img-frame-zoom{
             position: absolute;
             // right: 50px;
@@ -2380,10 +2390,11 @@ $anim-dur_x2: 1s;
             height: 20.7vw;        
             transform: translateY(66vh);
             // transition: all 0.75s ease-in-out;
-            transition: right .75s ease-in-out .75s, top .75s ease-in-out .75s, width .75s ease-in-out .75s, height .75s ease-in-out .75s, transform .75s ease-in-out;
+            transition: right $anim-dur ease-in-out $anim-dur, top $anim-dur ease-in-out $anim-dur, width $anim-dur ease-in-out $anim-dur, height $anim-dur ease-in-out $anim-dur, transform $anim-dur ease-in-out;
             z-index: 9;
             border-radius: 10px;
             overflow: hidden;
+            margin-bottom: 0px;
             img{
                 width: 100%;
                 height: 100%;
@@ -2394,19 +2405,22 @@ $anim-dur_x2: 1s;
             @media (max-width: 1400px) {
                 right: 60px;
             }
-            @media (max-width: 992px) {
+            @media (max-width: 1250px) {
                 right: 0px;
                 top: 0;
-                width: calc(100% - 60px);
-                height: 398px;
+                width: calc(100% - 48px);
+                height: auto;
                 position: relative;
+                margin-bottom: 20px;
+                transform: translateY(78vh);
+                transition: all $anim-dur ease-in-out;
             }
         }
         > .container {
             > .col-setting {
                 // transform: translateY(35vh);
                 transform: translateY(66vh);
-                transition: all 0.75s ease-in-out;
+                transition: all $anim-dur ease-in-out;
                 // opacity: 0;
             }
             .fz-title{
@@ -2418,6 +2432,10 @@ $anim-dur_x2: 1s;
                 }
                 @media (max-width: 992px) {
                     max-width: 100%;
+                    padding-right: 0px !important;
+                }
+                @media (max-width: 767px) {
+                    font-size: 24px;
                 }
 
             }
@@ -2505,14 +2523,15 @@ $anim-dur_x2: 1s;
                 width: 100%;
                 height: 100vh;
                 transform: translateY(-100vh);
-                transition: right .70s ease-in-out, top .70s ease-in-out, width .70s ease-in-out, height .70s ease-in-out, transform .70s ease-in-out .70s;
+                transition: right $anim-dur ease-in-out, top $anim-dur ease-in-out, width $anim-dur ease-in-out, height $anim-dur ease-in-out, transform $anim-dur ease-in-out $anim-dur;
                 opacity: 1;
-                @media (max-width: 992px) {
+                @media (max-width: 1250px) {
                     right: 0px;
                     top: 0;
-                    width: calc(100% - 60px);
-                    height: 398px;
+                    width: calc(100% - 48px);
+                    height: auto;
                     position: relative;
+                    transition: all $anim-dur ease-in-out;
                 }
             }
             > .container {
@@ -2558,6 +2577,7 @@ $anim-dur_x2: 1s;
     }
     &.is--active-frame-3 {
         .frame--3 {
+            opacity: 1;
             > .container {
                 > .col-setting{
                     transform: translateY(0px);
@@ -2570,6 +2590,13 @@ $anim-dur_x2: 1s;
                 // transition-delay: $anim-dur;
             }
         }
+        .frame-backgrounds {
+            .bg {
+              &.bg--4 {
+                animation-delay: 0s;
+              }
+            }
+          }
     }
     &.is--active-frame-4 {
         .frame--4 {
@@ -2596,6 +2623,10 @@ $anim-dur_x2: 1s;
         }
         @media (max-width: 1400px) {
             padding: 0 60px;
+            width: 100%;
+        }
+        @media (max-width: 1250px) {
+            padding: 0 24px;
             width: 100%;
         }
     }
@@ -2640,13 +2671,13 @@ $anim-dur_x2: 1s;
                 width: 100% !important;
                 height: 100% !important;
                 display: flex;
-                margin: 0 -30px;
+                margin: 0 -12px;
             }
             .slick-slide {
                 width: 100% !important;
                 flex: 0 0 50%;
                 max-width: 50%;
-                padding: 0 15px;
+                padding: 0 12px;
             }
         }
         @media (max-width: 767px) {
@@ -2657,7 +2688,7 @@ $anim-dur_x2: 1s;
                 width: 100% !important;
                 flex: 0 0 100%;
                 max-width: 100%;
-                padding: 0 15px;
+                padding: 0 12px;
             }
         }
         .postBox {
