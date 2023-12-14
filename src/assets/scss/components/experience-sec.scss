@@ -1,8 +1,9 @@
 $threads_height: 85px;
 $header_height: 106px;
 $thread_top: 84px;
-$anim-dur: 1s;
-$anim-dur_x2: 1.5s;
+$anim-dur: 1.5s;
+$anim-dur_x2: 2s;
+$anim-dur_3_5: 3.5s;
 
 .c-experience-sec {
     position: relative;
@@ -1299,7 +1300,9 @@ $anim-dur_x2: 1.5s;
                 background-image: url(../img/exp/bg-pattern1.svg);
                 background-size: auto;
                 background-position: center;
-
+                @media (max-width: 1800px) {
+                    background-size: 90%;
+                }
                 @media (max-width: 1250px) {
                     background-size: contain;
                 }
@@ -1310,6 +1313,9 @@ $anim-dur_x2: 1.5s;
                 background-image: url(../img/exp/bg-pattern3.svg);
                 background-size: auto;
                 background-position: right;
+                @media (max-width: 1800px) {
+                    background-size: 60%;
+                }
                 @media (max-width: 1250px) {
 
                     background-size: contain;
@@ -1321,6 +1327,9 @@ $anim-dur_x2: 1.5s;
                 background-image: url(../img/exp/bg-pattern2.svg);
                 background-size: auto;
                 background-position: center;
+                @media (max-width: 1800px) {
+                    background-size: 90%;
+                }
                 @media (max-width: 1250px) {
 
                     background-size: contain;
@@ -1332,7 +1341,9 @@ $anim-dur_x2: 1.5s;
                 background-image: url(../img/exp/bg-pattern2.svg);
                 background-size: auto;
                 background-position: center;
-
+                @media (max-width: 1800px) {
+                    background-size: 90%;
+                }
                 @media (max-width: 1250px) {
 
                     background-size: contain;
@@ -2528,7 +2539,7 @@ $anim-dur_x2: 1.5s;
     // }
     .frame--1 {
         opacity: 1;
-        @media (max-width: 992px) {
+        @media (max-width: 1250px) {
             opacity: 0; 
         }
         .c-img-frame-zoom{
@@ -2562,6 +2573,7 @@ $anim-dur_x2: 1.5s;
                 right: 0px;
                 top: 0;
                 width: calc(100% - 48px);
+                max-width: 660px;
                 height: auto;
                 position: relative;
                 margin-bottom: 20px;
@@ -2570,6 +2582,9 @@ $anim-dur_x2: 1.5s;
             }
         }
         > .container {
+            @media (max-width: 1250px) {
+                max-width: 700px;
+            }
             > .col-setting {
                 // transform: translateY(35vh);
                 transform: translateY(66vh);
@@ -2582,6 +2597,9 @@ $anim-dur_x2: 1.5s;
                 @media (max-width: 1400px) {
                    
                     font-size: 33px;
+                }
+                @media (max-width: 1250px) {
+                    max-width: 100%;
                 }
                 @media (max-width: 992px) {
                     max-width: 100%;
@@ -2597,6 +2615,9 @@ $anim-dur_x2: 1.5s;
                 max-width: 26.9vw;
                 @media (max-width: 1400px) {
                     max-width: 36.9vw;
+                }
+                @media (max-width: 1250px) {
+                    max-width: 80%;
                 }
                 @media (max-width: 992px) {
                     max-width: 100%;
@@ -2620,7 +2641,7 @@ $anim-dur_x2: 1.5s;
 
     .frame--2 {
         opacity: 1;
-        @media (max-width: 992px) {
+        @media (max-width: 1250px) {
             opacity: 0; 
         }
         .c-img-frame-zoom{
@@ -2662,6 +2683,9 @@ $anim-dur_x2: 1.5s;
             }
         }
         > .container {
+            @media (max-width: 1250px) {
+                max-width: 700px;
+            }
             > .col-setting {
                 // transform: translateY(35vh);
                 transform: translateY(66vh);
@@ -2673,6 +2697,9 @@ $anim-dur_x2: 1.5s;
                 max-width: 41.6vw;
                 @media (max-width: 1400px) {
                     font-size: 33px;
+                }
+                @media (max-width: 1250px) {
+                    max-width: 100%;
                 }
                 @media (max-width: 992px) {
                     max-width: 100%;
@@ -2792,6 +2819,7 @@ $anim-dur_x2: 1.5s;
                 transition: right $anim-dur ease-in-out, top $anim-dur ease-in-out, width $anim-dur ease-in-out, height $anim-dur ease-in-out, transform $anim-dur ease-in-out $anim-dur;
                 opacity: 1;
                 @media (max-width: 1250px) {
+                    transform: translateY(-60vh);
                     right: 0px;
                     top: 0;
                     width: calc(100% - 48px);
@@ -2809,6 +2837,10 @@ $anim-dur_x2: 1.5s;
                 > .col-setting {
                     // transform: translateY(-26vh);
                     transform: translateY(-87vh);
+                    @media (max-width: 1250px) {
+                        transform: translateY(-60vh);
+                        // transition-delay: $anim-dur;
+                    }
                     // opacity: 1;
                 }
             }
@@ -3000,7 +3032,7 @@ $anim-dur_x2: 1.5s;
             max-width: 24%;
             &:nth-child(even) {
                 transform: translateY(30vh);
-                transition: all 3s ease;
+                transition: all $anim-dur_3_5 ease-in-out;
             }
             @media (max-width: 991px) {
                 flex: 0 0 100%;
@@ -3048,8 +3080,10 @@ $anim-dur_x2: 1.5s;
             .postContent {
                 .prgh {
                     margin-top: 32px;
-                    @media (max-width: 1024px) {
+                    @media (max-width: 1650px) {
                         font-size: 20px;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
                     }
                     @media (max-width: 991px) {
                         font-size: 18px;
@@ -3058,8 +3092,8 @@ $anim-dur_x2: 1.5s;
                     }
                 }
                 p {
-                    @media (max-width: 1024px) {
-                        font-size: 18px;
+                    @media (max-width: 1650px) {
+                        font-size: 16px;
                     }
                     @media (max-width: 991px) {
                         font-size: 16px;
@@ -3120,7 +3154,7 @@ $anim-dur_x2: 1.5s;
             max-width: 24%;
             &:nth-child(even) {
                 transform: translateY(30vh);
-                transition: all 3s ease;
+                transition: all $anim-dur_3_5 ease-in-out;
             }
             @media (max-width: 991px) {
                 flex: 0 0 100%;
@@ -3168,8 +3202,10 @@ $anim-dur_x2: 1.5s;
             .postContent {
                 .prgh {
                     margin-top: 32px;
-                    @media (max-width: 1024px) {
+                    @media (max-width: 1650px) {
                         font-size: 20px;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
                     }
                     @media (max-width: 991px) {
                         font-size: 18px;
@@ -3178,8 +3214,8 @@ $anim-dur_x2: 1.5s;
                     }
                 }
                 p {
-                    @media (max-width: 1024px) {
-                        font-size: 18px;
+                    @media (max-width: 1650px) {
+                        font-size: 16px;
                     }
                     @media (max-width: 991px) {
                         font-size: 16px;
