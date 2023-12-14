@@ -1256,45 +1256,46 @@ $anim-dur_x2: 1.5s;
 
             &.bg--1 {
                 background-color: var(--secondary-color);
-                background-image: url(../img/exp/stars-bg.svg);
-                background-size: 90% auto;
-                background-position: -100px;
+                background-image: url(../img/exp/bg-pattern1.svg);
+                background-size: auto;
+                background-position: center;
 
                 @media (max-width: 1250px) {
-                    background: var(--secondary-color) url(../img/exp/stars-bg-sm.svg) no-repeat bottom 70px right / 250px;
+                    background-size: contain;
                 }
             }
 
             &.bg--2 {
                 background-color: var(--green);
-                background-image: url(../img/exp/trees-bg.svg);
-
+                background-image: url(../img/exp/bg-pattern3.svg);
+                background-size: auto;
+                background-position: right;
                 @media (max-width: 1250px) {
 
-                    background: url(../img/exp/trees-bg-sm.svg) no-repeat bottom 70px right -70px / 300px,
-                        url(../img/exp/trees-bg-top.svg) no-repeat top 70px left 30px / 100px var(--green);
+                    background-size: contain;
                 }
             }
 
             &.bg--3 {
                 background-color: var(--blue);
-                background-image: url(../img/exp/birds-bg.svg);
-
+                background-image: url(../img/exp/bg-pattern2.svg);
+                background-size: auto;
+                background-position: center;
                 @media (max-width: 1250px) {
 
-                    background: url(../img/exp/birds-bg-bot.svg) no-repeat bottom 30px right -10px / 200px,
-                        url(../img/exp/birds-bg-top.svg) no-repeat top 70px left -70px / 250px var(--blue);
+                    background-size: contain;
                 }
             }
 
             &.bg--4 {
                 background-color: var(--secondary-color);
-                background-image: url(../img/exp/birds-bg.svg);
+                background-image: url(../img/exp/bg-pattern2.svg);
+                background-size: auto;
+                background-position: center;
 
                 @media (max-width: 1250px) {
 
-                    background: url(../img/exp/birds-bg-bot.svg) no-repeat bottom 30px right -10px / 200px,
-                        url(../img/exp/birds-bg-top.svg) no-repeat top 70px left -70px / 250px var(--secondary-color);
+                    background-size: contain;
                 }
             }
 
@@ -1793,7 +1794,7 @@ $anim-dur_x2: 1.5s;
             transform: translate(-50%, -50%);
             width: 60%;
             height: 60%;
-            background: url(../img/icon_audio.svg) no-repeat center center / contain;
+            background: url(../img/icon_audio2.svg) no-repeat center center / contain;
             transition: all 0.3s ease-in-out;
             opacity: 0;
         }
@@ -2526,7 +2527,8 @@ $anim-dur_x2: 1.5s;
     }
     .frame--5 {
         .box-wrapper {
-            transform: translateY(30vh);
+            transform: translateY(0);
+            transform: translateX(-30vw);
         }
         .c-img-box {
             transform: translateY(20px);
@@ -2842,6 +2844,126 @@ $anim-dur_x2: 1.5s;
             }
         }
     }
+    .sec-content-boxs2 {
+        display: flex;
+        justify-content: space-between;
+        align-self: flex-start;
+        .slick-list {
+            overflow: visible !important;
+        }
+        .slick-track {
+            width: 100% !important;
+            height: 100% !important;
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 991px) {
+                height: auto;
+            }
+        }
+        .slick-slide {
+            width: 100% !important;
+            flex: 0 0 24%;
+            max-width: 24%;
+            &:nth-child(even) {
+                transform: translateY(30vh);
+                transition: all 3s ease;
+            }
+            @media (max-width: 991px) {
+                flex: 0 0 100%;
+                max-width: 100%;
+                &:nth-child(even) {
+                    transform: translateY(0);
+                }    
+            }
+        }
+        @media (max-width: 991px) {
+            display: inline-block;
+            width: 100%;
+            .slick-track {
+                width: 100% !important;
+                height: 100% !important;
+                display: flex;
+                margin: 0 -12px;
+            }
+            .slick-slide {
+                width: 100% !important;
+                flex: 0 0 50%;
+                max-width: 50%;
+                padding: 0 12px;
+            }
+        }
+        @media (max-width: 767px) {
+            .slick-track {
+                margin-top: 50px;
+            }
+            .slick-slide {
+                width: 100% !important;
+                flex: 0 0 100%;
+                max-width: 100%;
+                padding: 0 12px;
+            }
+        }
+        .postBox {
+            .postImg {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .postContent {
+                .prgh {
+                    margin-top: 32px;
+                    @media (max-width: 1024px) {
+                        font-size: 20px;
+                    }
+                    @media (max-width: 991px) {
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                        margin-top: 20px;
+                    }
+                }
+                p {
+                    @media (max-width: 1024px) {
+                        font-size: 18px;
+                    }
+                    @media (max-width: 991px) {
+                        font-size: 16px;
+                    }
+                    @media (max-width: 767px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .slick-arrow {
+            text-indent: -9999px;
+            background: transparent;
+            border: none;
+            top: -50px;
+            background-image: url(../img/arrow-up.svg);
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            &.slick-next {
+                transform: rotate(-90deg);
+                right: 0;
+            }
+            &.slick-prev {
+                transform: rotate(90deg);
+                right: 50px;
+            }
+            &.slick-disabled {
+                pointer-events: none;
+                opacity: 0.5;
+            }
+            @media (max-width: 767px) {
+                top: 0;
+
+            }
+        }
+    }
     &.is--active-frame-3  {
         .sec-content-boxs { 
             .slick-track {
@@ -2860,7 +2982,7 @@ $anim-dur_x2: 1.5s;
         }
     }
     &.is--active-frame-4  {
-        .sec-content-boxs { 
+        .sec-content-boxs2 { 
             .slick-track {
                 .slick-slide {
                     &:nth-child(even) {
@@ -2894,7 +3016,7 @@ $anim-dur_x2: 1.5s;
     }
     &.is--gone-frame-4 {
         .frame--4{
-            .sec-content-boxs { 
+            .sec-content-boxs2 { 
                 .slick-track {
                     .slick-slide {
                         &:nth-child(even) {
@@ -2909,5 +3031,4 @@ $anim-dur_x2: 1.5s;
 
         }
     }
-
 }
