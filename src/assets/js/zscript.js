@@ -1220,7 +1220,7 @@ $('.js-content_slider').slick({
     swipe: false,
     responsive: [
         {
-          breakpoint: 991,
+          breakpoint: 992,
           settings: {
             slidesToShow: 2,
           },
