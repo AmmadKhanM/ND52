@@ -1218,6 +1218,7 @@ $('.js-content_slider').slick({
     adaptiveHeight: true,
     dots: false,
     swipe: false,
+    rtl: isRTL,
     responsive: [
         {
           breakpoint: 992,
