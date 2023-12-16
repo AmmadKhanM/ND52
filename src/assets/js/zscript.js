@@ -834,7 +834,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        const labels = ['a', 'b', 'c', 'd', 'e', 'f'];
+        const labels = ['a', 'b', 'c', 'd', 'e', 'f' , 'g'];
         const maxPath = 12;
         const duration = .75;
         let offset = 0;
@@ -842,7 +842,7 @@ document.addEventListener("DOMContentLoaded", function () {
             offset = 0;
             for (let j = 1; j <= maxPath; j++) {
                 const fromPath = "#path-" + labels[0] + "-" + j;
-                const toPath1 = "#path-" + labels[i + 1] + "-" + j;
+                const toPath1 = "#path-" + labels[i + 0] + "-" + j;
                 const path = document.querySelector(toPath1).getAttribute("d");
                 masterThreadsTimeline.add(
                     gsap.to(fromPath, { duration: duration, morphSVG: path, ease: "linear" }),
@@ -922,7 +922,7 @@ document.addEventListener("DOMContentLoaded", function () {
             paths[i].addEventListener('click', function (event) { // add click listener for each path
 
                 let idStr = event.target.id;
-                let frameNo = idStr.split("-")[2] - 7; // calculate frameNo based on id (path-a-7 is frame 0, path-a-8 is frame 1, ...)
+                let frameNo = idStr.split("-")[2] - 6; // calculate frameNo based on id (path-a-6 is frame 0, path-a-7 is frame 1, ...)
                 // trigger update class function
                 activeExpSlide = frameNo;
                 updateClassesForFrames();
